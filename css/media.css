@@ -1,4 +1,4 @@
-@media (min-width: 0px) {
+@media (max-width: 480px) {
      /*head*/
     header{
         padding: 100px 0 10px 0;
@@ -13,7 +13,7 @@
     
     }
     .typewriter {
-        font-size: .9rem;    
+        font-size: 1rem;    
     }
     .nav__header {
         

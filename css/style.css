@@ -10,7 +10,6 @@ header {
 
 .caixa {
     margin: 0 auto;
-    background: #fafafa;
 }
 
 .titulo__principal {
@@ -51,7 +50,7 @@ b {
     color: white;
     font-weight: bold;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 20px;
     /* overflow: hidden; Ensures the content is not revealed until the animation
     border-right: 2px solid white; The typwriter cursor
     white-space: pre; Keeps the content on a single line
@@ -104,6 +103,10 @@ b {
     padding-top: 20px;
 }
 
+.sobre__mim___button {
+	  transition: 1s scroll;
+}
+
 /*sobre mim*/
 
 .img__eu {
@@ -115,7 +118,6 @@ b {
 
 .section__sobreMim {
     padding: 100px 0;
-    background: #fafafa;
 }
 
 .caixa__sobreMim {
@@ -149,7 +151,6 @@ b {
 
 
 .section__estudos {
-    background: #fafafa;
 	  padding: 100px 0;
 }
 .section__estudos h2{
@@ -164,10 +165,12 @@ b {
 }
 
 .caixa__estudos___unitario{
-    margin: 0 30px;
-    padding: 50px;
-    background: linear-gradient(orange , #ffffff 30%);
+    padding: 100px;
+    background: #fafafa;
     border-radius: 5px;
+    width: 25%;
+    margin: 0 10px;
+    
 }
 
 .imgs {
@@ -188,6 +191,7 @@ b {
 .caixa__estudos___unitario p, .caixa__estudos___unitario h3, .caixa__estudos___unitario h4 {
     margin: 10px auto 0 auto;
     font-size: 1.1rem;
+    
 }
 
 .caixa__estudos___unitario h4{
@@ -225,20 +229,6 @@ b {
      border-color: darkblue;
 }
 
-.caixa__experiencias___unitario{
-    background: linear-gradient(darkblue , #ffffff 30%);
-}
-
-.img__ministerio{
-    width:  80px;
-    height: 80px;
-    padding: 20px;
-}
-
-.img__sulwork{
-    width: 150px;
-    height: 100px;
-}
 
 /*section conhecimento*/
 .section__conhecimento {
@@ -321,7 +311,7 @@ b {
     margin-top: 5px;
     font-size: 1em;
     padding: 5px;
-    border-bottom: 2px dashed grey;
+    border-bottom: 2px grey;
 
 }
 
@@ -346,15 +336,11 @@ b {
     margin-left: 5px;
 }
 
-.nav__li {
-
-}
 
 /*section contato*/
 
 .section__contato {
 	  padding: 150px 0;
-    background: #fafafa;
 }
 
 .section__subtitulo___contat {
@@ -370,7 +356,6 @@ b {
 }
 
 .caixa__email {
-	  background: linear-gradient(#006cc6, white 30%);
     text-align: center;
 }
 
@@ -422,7 +407,6 @@ b {
 }
 
 .caixa__whats{
-    background: linear-gradient(#2d8b03, white 30%);
 }
    
 
@@ -560,3 +544,30 @@ footer p{
     }
 }  
 */
+
+
+.typewriter{
+    max-width: 480px;
+    text-align: center;
+    margin: 60px auto;
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+    
+}
+
+.typewriter:after{
+ content: '|';
+ margin-left: 2px;
+ opacity: 1;
+ animation: pisca .7s infinite;
+}
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
