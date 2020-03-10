@@ -1,4 +1,3 @@
-
 var frase = document.querySelector(".typewriter");
 
 
